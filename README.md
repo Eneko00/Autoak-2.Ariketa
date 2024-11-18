@@ -1,0 +1,1 @@
+# Autoak-2.Ariketa
