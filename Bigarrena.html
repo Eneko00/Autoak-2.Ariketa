@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Japoniarrak</title>
+    <style>
+        body { font-family: 'Arial', Times, serif, sans-serif; color: #141212dd}
+        h1 { text-align: center; color: #13456666; }
+        h2 { font-size:20px; color: #167}
+        .txikia {
+            width: 150px;
+            cursor: pointer;
+        }
+
+        .handia {
+            width: 400px;
+        }
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+ <nav>
+        <a href="Autoak.HTML">Sarrera</a>
+        <a href="Lehena.html">Alemanak</a>
+        <a href="Hirugarrena.html">Amerikarrak</a>
+      </nav>
+</body>
+<h2>Irudia</h2>
+<img src="787B.jpg" alt="Irudi txikia" onclick="handitu(this)" class="txikia">
+
+<script>
+    function handitu(irudia) {
+        if (irudia.classList.contains("txikia")) {
+            irudia.classList.remove("txikia");
+            irudia.classList.add("handia");
+        } else {
+            irudia.classList.remove("handia");
+            irudia.classList.add("txikia");
+        }
+    }
+</script>
+
+<h2>Bideoa</h2>
+<video controls width="320">
+    <source src="Mazda 787 B Great sound, Warm up - Fly by's 2011 (online-video-cutter.com).mp4" type="video/mp4">
+    Zure nabigatzaileak ez du bideoa erakusten.
+</video>
+
+<h2>Audioa</h2>
+<audio controls>
+    <source src="Mazda 787 B Great sound, Warm up - Fly by's 2011 (online-audio-converter.com).mp3" type="audio/mpeg">
+    Zure nabigatzaileak ez du audioa erakusten.
+</audio>
+</body>
+</html>
